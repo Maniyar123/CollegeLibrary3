@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SearchActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateVisible"/>
     </application>
 
 </manifest>
