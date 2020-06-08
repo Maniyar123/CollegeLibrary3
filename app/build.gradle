@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.afeefa.collegelibrary"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    buildToolsVersion = '26.0.2'
+    //compileOptions {
+        //targetCompatibility 1.13
+        //sourceCompatibility 1.13
+    //}
 }
 
 dependencies {
@@ -25,5 +34,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    compile 'com.android.support:appcompat-v7:27.1.1'
+   // implementation 'org.jetbrains:annotations:15.0'
+    //implementation 'com.android.support:support-annotations:26.1.0'
+    implementation 'com.android.volley:volley:1.1.1'
 }
